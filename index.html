@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the leadership team shaping Akash's aerospace future." />
+    <title>Akash — Leadership</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { color-scheme: dark; --ink: #ecf6ff; --muted: #a7bacb; --blue: #4bb7ff; --line: rgba(170, 220, 255, .2); }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-width: 320px; color: var(--ink); background: #030b15; font-family: Manrope, sans-serif; }
+      .leadership { position: relative; isolation: isolate; min-height: 100vh; overflow: hidden; padding: clamp(4.5rem, 9vw, 8rem) 1.5rem; background: radial-gradient(circle at 50% -20%, #173f69 0, transparent 42%), linear-gradient(135deg, #030b15 5%, #071a2e 58%, #020710 100%); }
+      .leadership::before, .leadership::after { position: absolute; z-index: -1; content: ""; border-radius: 50%; filter: blur(12px); pointer-events: none; }
+      .leadership::before { width: 30rem; height: 30rem; top: 20%; left: -16rem; background: rgba(31, 137, 255, .18); }
+      .leadership::after { width: 22rem; height: 22rem; right: -10rem; bottom: 3%; background: rgba(21, 106, 229, .16); }
+      .shell { width: min(100%, 1150px); margin: 0 auto; }
+      .eyebrow { display: flex; align-items: center; gap: .7rem; margin: 0 0 1rem; color: #7dcbff; font: 500 .72rem/1.2 "DM Mono", monospace; letter-spacing: .15em; }
+      .eyebrow::before { width: 2.3rem; height: 1px; background: currentColor; content: ""; }
+      h1 { max-width: 13ch; margin: 0; font-size: clamp(2.55rem, 6.2vw, 5.5rem); line-height: .98; letter-spacing: -.07em; }
+      .intro { max-width: 38rem; margin: 1.5rem 0 3.5rem; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.125rem); line-height: 1.75; }
+      .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
+      .leader-card { position: relative; display: grid; overflow: hidden; min-height: 38rem; border: 1px solid var(--line); border-radius: 1.5rem; background: linear-gradient(135deg, rgba(255,255,255,.13), rgba(255,255,255,.04)); box-shadow: 0 14px 48px rgba(0, 111, 255, .16), inset 0 1px rgba(255,255,255,.14); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+      .leader-card:hover, .leader-card:focus-within { transform: translateY(-7px); border-color: rgba(117, 204, 255, .58); box-shadow: 0 18px 62px rgba(0, 128, 255, .28), inset 0 1px rgba(255,255,255,.2); }
+      .portrait-wrap { position: relative; aspect-ratio: 4 / 4.25; overflow: hidden; }
+      .portrait-wrap::after { position: absolute; inset: auto 0 0; height: 42%; content: ""; background: linear-gradient(transparent, rgba(3, 11, 21, .97)); }
+      .portrait { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+      .card-content { display: grid; align-content: start; gap: 1rem; padding: 0 1.65rem 1.65rem; margin-top: -2.6rem; z-index: 1; }
+      .role { margin: 0; color: #75cbff; font: 500 .7rem/1.2 "DM Mono", monospace; letter-spacing: .15em; text-transform: uppercase; }
+      h2 { margin: 0; font-size: clamp(1.55rem, 2.8vw, 2.1rem); letter-spacing: -.055em; }
+      .description { min-height: 5.2em; margin: 0; color: #c1d0de; font-size: .94rem; line-height: 1.65; }
+      blockquote { margin: .25rem 0 0; padding: .75rem 0 .75rem 1rem; border-left: 2px solid #53baff; color: #f1f8ff; font-size: 1rem; font-style: italic; line-height: 1.5; }
+      .actions { display: flex; gap: .65rem; margin-top: .25rem; }
+      .action { display: inline-grid; width: 2.55rem; aspect-ratio: 1; place-items: center; border: 1px solid rgba(185, 228, 255, .28); border-radius: 50%; color: #dff3ff; background: rgba(0, 92, 166, .15); transition: background .2s ease, transform .2s ease, outline-color .2s ease; }
+      .action:hover { background: #168bd5; transform: translateY(-2px); } .action:focus-visible { outline: 3px solid #80d5ff; outline-offset: 3px; }
+      .action svg { width: 1rem; height: 1rem; fill: currentColor; } .action .mail { fill: none; stroke: currentColor; stroke-width: 2; }
+      @media (max-width: 700px) { .leadership { padding-inline: 1rem; } .intro { margin-bottom: 2.25rem; } .cards { grid-template-columns: 1fr; } .leader-card { min-height: 0; } .portrait-wrap { aspect-ratio: 4 / 3.5; } }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+    </style>
+  </head>
+  <body>
+    <main class="leadership">
+      <section class="shell" aria-labelledby="leadership-heading">
+        <p class="eyebrow">AKASH / PEOPLE</p>
+        <h1 id="leadership-heading">OUR LEADERSHIP</h1>
+        <p class="intro">The thinkers, builders, and material scientists translating ambitious aerospace ideas into responsible progress.</p>
+        <div class="cards">
+          <article class="leader-card">
+            <div class="portrait-wrap"><img class="portrait" src="public/images/leadership/nithyasri-annadurai-ceo.svg" alt="Portrait of Nithyasri Annadurai, CEO and Founder" loading="lazy" /></div>
+            <div class="card-content"><p class="role">CEO &amp; Founder</p><h2>Nithyasri Annadurai</h2><p class="description">Visionary entrepreneur driving the future of aerospace through advanced material science and sustainable aviation innovation.</p><blockquote>“Innovation begins where limits end.”</blockquote><nav class="actions" aria-label="Contact Nithyasri Annadurai"><a class="action" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Nithyasri Annadurai on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5A1.7 1.7 0 1 1 5.2 7a1.7 1.7 0 0 1 0-3.5ZM3.7 8.4h3V20h-3V8.4ZM8.7 8.4h2.9V10h.1c.4-.8 1.4-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.6V20h-3v-5.5c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V20h-3V8.4Z" /></svg></a><a class="action" href="mailto:leadership@akash.aero?subject=Message%20for%20Nithyasri%20Annadurai" aria-label="Email Nithyasri Annadurai"><svg class="mail" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a></nav></div>
+          </article>
+          <article class="leader-card">
+            <div class="portrait-wrap"><img class="portrait" src="public/images/leadership/cofounder.svg" alt="Portrait of Akash co-founder" loading="lazy" /></div>
+            <div class="card-content"><p class="role">Co-Founder</p><h2>Akash Co-Founder</h2><p class="description">Leading engineering research, strategic development, and advanced aerospace technologies to transform bold ideas into reality.</p><blockquote>“The future belongs to those who engineer it.”</blockquote><nav class="actions" aria-label="Contact Akash co-founder"><a class="action" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Akash co-founder on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5A1.7 1.7 0 1 1 5.2 7a1.7 1.7 0 0 1 0-3.5ZM3.7 8.4h3V20h-3V8.4ZM8.7 8.4h2.9V10h.1c.4-.8 1.4-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.6V20h-3v-5.5c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9V20h-3V8.4Z" /></svg></a><a class="action" href="mailto:leadership@akash.aero?subject=Message%20for%20the%20Co-Founder" aria-label="Email Akash co-founder"><svg class="mail" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a></nav></div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
